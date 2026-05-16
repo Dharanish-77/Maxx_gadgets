@@ -1,20 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MAXX GADGETS</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:black;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(to bottom right,#000,#001f4d,#000);
+    }
+
+    .glow{
+      font-size:70px;
+      font-weight:bold;
+      color:#4da6ff;
+      text-shadow:0 0 20px #0080ff;
+    }
+
+    .sub{
+      margin-top:20px;
+      font-size:24px;
+      color:#ddd;
+    }
+
+    .btns{
+      margin-top:40px;
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .btn{
+      padding:15px 35px;
+      border-radius:40px;
+      border:none;
+      background:#0080ff;
+      color:white;
+      font-size:20px;
+      cursor:pointer;
+      transition:0.3s;
+      text-decoration:none;
+    }
+
+    .btn:hover{
+      transform:scale(1.1);
+      background:#00aaff;
+    }
+
+    .products{
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .title{
+      font-size:50px;
+      margin-bottom:50px;
+      color:#4da6ff;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#0d1117;
+      border:1px solid #1f6feb;
+      border-radius:25px;
+      padding:30px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 30px #1f6feb;
+    }
+
+    .emoji{
+      font-size:60px;
+    }
+
+    .price{
+      color:#4da6ff;
+      margin-top:10px;
+      font-size:25px;
+    }
+
+    .contact{
+      padding:100px 20px;
+      text-align:center;
+      background:linear-gradient(to right,#001f4d,#000);
+    }
+
+    footer{
+      padding:20px;
+      text-align:center;
+      color:gray;
+      border-top:1px solid #222;
+    }
+  </style>
 </head>
 
-<body style="background:black;color:white;text-align:center;font-family:Arial;padding-top:100px;">
+<body>
 
-<h1>🔥 MAXX GADGETS 🔥</h1>
+  <section class="hero">
+    <h1 class="glow">🔥 MAXX GADGETS 🔥</h1>
 
-<h2>Mobile Accessories & Services</h2>
+    <p class="sub">
+      Mobile Accessories & Services
+    </p>
 
-<p>Welcome to MAXX GADGETS</p>
+    <div class="btns">
+      <a class="btn" href="https://wa.me/919344607639">
+        WhatsApp Order
+      </a>
 
-<a href="https://instagram.com/maxx._.gadgets">
-Instagram Page
-</a>
+      <a class="btn" href="https://instagram.com/maxx._.gadgets">
+        Instagram
+      </a>
+    </div>
+  </section>
+
+  <section class="products">
+
+    <h2 class="title">
+      Trending Products ⚡
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="emoji">🎧</div>
+        <h2>Bluetooth Earbuds</h2>
+        <p class="price">₹999</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">⌚</div>
+        <h2>Smart Watch</h2>
+        <p class="price">₹1499</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🔌</div>
+        <h2>Fast Charger</h2>
+        <p class="price">₹599</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">📱</div>
+        <h2>Mobile Covers</h2>
+        <p class="price">₹249</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contact">
+
+    <h2 class="title">
+      Contact MAXX GADGETS
+    </h2>
+
+    <p style="margin-top:20px;font-size:22px;">
+      📞 9344607639
+    </p>
+
+    <div class="btns">
+
+      <a class="btn" href="https://wa.me/919344607639">
+        Order Now
+      </a>
+
+      <a class="btn" href="https://instagram.com/maxx._.gadgets">
+        Follow Us
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 MAXX GADGETS • All Rights Reserved
+  </footer>
 
 </body>
 </html>
